@@ -1,0 +1,30 @@
+.sliding-button {
+  position: relative;
+  overflow: hidden;
+  width: 100px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.sliding-button span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+.sliding-button:hover span {
+  left: -100%;
+  background-color: #ff0000; /* Red */
+}
+.sliding-button:active span {
+  background-color: #00ff00; /* Green */
+}
